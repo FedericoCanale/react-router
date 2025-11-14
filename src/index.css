@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+
+}
+
+/* Pagina prodotti */
+
+.products-page {
+    padding: 20px;
+}
+
+.products-title {
+    margin-bottom: 20px;
+}
+
+/* Griglia di prodotti – responsive semplice */
+.products-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Card prodotto */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Immagine prodotto */
+.product-image {
+    display: block;
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin: 8px 0;
+}
+
+/* Testi */
+.product-name {
+    font-size: 1rem;
+    margin: 0 0 8px;
+}
+
+.product-price {
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.product-category {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 4px 0 8px;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #333;
+}
