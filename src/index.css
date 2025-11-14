@@ -82,3 +82,29 @@ body {
     font-size: 1.1rem;
     color: #555;
 }
+
+.about-page {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-box {
+    max-width: 700px;
+    background-color: #fafafa;
+    padding: 30px 40px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.about-title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 12px 0;
+}
