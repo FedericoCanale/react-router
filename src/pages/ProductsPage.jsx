@@ -15,13 +15,23 @@ export default function ProductsPage() {
         <div>
             <h1>Prodotti</h1>
 
-            <ul>
-                {products.map(product => (
-                    <li key={product.id}>
-                        {product.title} - {product.price}€
-                    </li>
-                ))}
-            </ul>
+            {products.map(product => (
+                <div key={product.id}>
+                    <h2>{product.title}</h2>
+
+                    <img
+                        src={product.image}
+                        alt={product.title}
+                        width="120"
+                    />
+
+                    <p><strong>Prezzo:</strong> {product.price} €</p>
+                    <p><strong>Categoria:</strong> {product.category}</p>
+                    <p><strong>Descrizione:</strong> {product.description}</p>
+
+                    <hr />
+                </div>
+            ))}
         </div>
     );
 }
