@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
 import SingleProduct from "./pages/SingleProduct";
+import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/chi-siamo" element={<AboutPage />} />
           <Route path="/prodotti" element={<ProductsPage />} />
           <Route path="/prodotti/:id" element={<SingleProduct />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
